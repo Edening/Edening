@@ -1,0 +1,69 @@
+<!--
+ * @Author: zouyaoji@https://github.com/zouyaoji
+ * @Date: 2022-05-25 14:53:30
+ * @LastEditTime: 2022-09-04 15:17:10
+ * @LastEditors: zouyaoji
+ * @Description:
+ * @FilePath: \vue-cesium-demo\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./vue-cesium-logo-small.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./iconfont/iconfont.js"></script>
+  <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
+  <!-- <script src="https://unpkg.com/cesium@latest/Build/Cesium/Cesium.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="./playerIconfont/iconfont.css" />
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Global Village</title>
+  <style>
+      html, body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+      }
+
+      #cesiumContainer {
+          width: 100%;
+          height: 100%;
+      }
+
+      #babylonCanvas {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          /* pointer-events: none; */
+          pointer-events: auto;
+      }
+  </style>
+  <script type="module" crossorigin src="./assets/index-ef30aff1.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/vendor-97131d8c.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-quasar-297cd2ec.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-lodash-d74a9531.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-echarts-e7c215e4.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-vue-cesium-1d2a54f8.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-pinia-d4eb351d.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-axios-3307f8a3.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-lowdb-e704bc35.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-interactjs-73a3d524.js">
+  <link rel="stylesheet" href="./assets/vendor-e1081bc0.css">
+  <link rel="stylesheet" href="./assets/vendor-quasar-11c81a2e.css">
+  <link rel="stylesheet" href="./assets/vendor-vue-cesium-6e4378fd.css">
+  <link rel="stylesheet" href="./assets/index-cb638900.css">
+</head>
+
+<body>
+  <div id="app">
+  </div>
+  <canvas id="babylonCanvas"></canvas>
+  
+  <script type="text/javascript" src="./libs/jessibuca/jessibuca.js"></script>
+</body>
+
+</html>
